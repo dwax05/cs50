@@ -1,0 +1,33 @@
+.large-font {
+    font-size: 18px;
+}
+
+.medium-font {
+    font-size: 14px;
+}
+
+.text-black {
+    color: #000;
+}
+
+.bg-red {
+    background: red;
+}
+
+.bg-gray {
+    background: gray;
+}
+
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-menu {
+    background-color: #ddd;
+    display: none;
+}
+
+.dropdown-item {
+    color: #333;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            function correct() {
+                alert('Correct!');
+            }
+
+            function incorrect() {
+                alert('Incorrect!');
+            }
+
+            function checkanswer() {
+                let answer = document.querySelector("input").value;
+                if (answer.toLowerCase() == 'washington dc') {
+                    correct();
+                }
+                else {
+                    incorrect();
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <div>
+                    <h3>What planet is closest to the sun?</h3>
+                    <div>
+                        <button onclick="correct()">Mercury</button>
+                        <button onclick="incorrect()">Venus</button>
+                        <button onclick="incorrect()">Earth</button>
+                        <button onclick="incorrect()">Mars</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <div>
+                    <h3>What is the capitol of the US?</h3>
+                    <form>
+                        <input>
+                        <button type="submit" onclick="checkanswer()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
